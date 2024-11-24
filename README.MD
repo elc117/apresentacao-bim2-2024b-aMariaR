@@ -22,7 +22,8 @@ Além de ser necessário sincronizar os cores, era necessário sincronizar as m�
 A Erlang utilizava sua máquina virtual para gerenciar os processos, aos invés das threads do processador, não compartilhava memória, se comunicava através de mensagens assincronas e utilizava a ideia de supervisores que monitoravam os processos e reiniciava-os caso necessário. 
 Isto solucionava os problemas da concorrência, mas a linguagem aindo tinha falhas de suporte ao desenvolvedor como features, com isso José Valim começou a deenvolver sua própria linguagem de programação, a Elixir surgiu como uma linguagem funcional e concorrente e que utiliza a BEAM como máquina virtual.
 
-![](https://upload.wikimedia.org/wikipedia/commons/9/92/Official_Elixir_logo.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Official_Elixir_logo.png" alt="Elixir Logo" width="150">
+
 ## Tópicos sobre concorrência:
 -Processadores com muitos cores - concorrência é o futuro;
 
