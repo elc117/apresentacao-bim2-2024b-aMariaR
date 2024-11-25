@@ -1,17 +1,18 @@
 # PROGRAMAÇÃO CONCORRENTE 
 ## Um contexto
 
-Entrevista do DevTalks com José Valim, desenvolvedor brasileiro, formado em engenharia elétrica pela Universidade de São Paulo, conhecido como criador da linguagem Elixir e desenvolvedor do framework Phoenix, autor de dois livros: Programming Phoenix e Crafting Rails Applications.
+Entrevista do DevTalks com José Valim, desenvolvedor brasileiro, formado em engenharia elétrica pela Universidade de São Paulo, conhecido como criador da linguagem Elixir e desenvolvedor do framework *Phoenix*, autor de dois livros: *Programming Phoenix* e *Crafting Rails Applications*.
 A linguagem Elixir surgiu em 2012, motivada para resolver problemas de concorrência ligadas ao Ruby e explorando a Erlang VM.
 
 ## A concorrência na época
 
-Na época que antecedia o desenvolvimento da linguagem Elixir, José trabalhava como desenvolvedor do framework em ruby dedicado a aplicações web: o Rails, o qual possuia suporte limitado a programação concorrente.
+Na época que antecedia o desenvolvimento da linguagem Elixir, José trabalhava como desenvolvedor do framework em ruby dedicado a aplicações web: o *Rails*, o qual possuia suporte limitado a programação concorrente.
 Em entrevista, José contou que em muitos eventos de tecnologia da época se dizia que a concorrência seria futuro, com o surgimento de processadores multicore, a ideia de rodar uma aplicação nos diversos cores do processador transformaria a programação, permitindo o aumento de desempenho e sistemas multi-tarefa.
 
-Porém as linguagens não estavam preparadas para a concorrência, com suportes limitados, haviam muitos bugs e erros de sincronização, e as soluções encontradas como por exemplo, o uso de locks (cadeados), por vezes limitavam tanto a execução dos programas que os benefícios da concorrência deixavam de existir.
+Porém as linguagens não estavam preparadas para a concorrência, com suportes limitados, haviam muitos bugs e erros de sincronização, e as soluções encontradas como por exemplo, o uso de *locks* (cadeados), por vezes limitavam tanto a execução dos programas que os benefícios da concorrência deixavam de existir.
 
-Os principais problemas encontrados advém do fato do controle das threads ser muito difícil, é necessário um alto gerenciamento de processos para evitar as races condition, condições onde threads acessam mesmas regiões de memória e provocam alterações, causando erros a depender da ordem de acesso.
+Os principais problemas encontrados advém do fato do controle das *threads* ser muito difícil, é necessário um alto gerenciamento de processos para evitar as *races condition*, condições onde *threads* acessam mesmas regiões de memória e provocam alterações, causando erros a depender da ordem de acesso.
+
 ![](https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2024b/main/classes/22/img/The-conflict-and-concurrent-lanes.jpeg)
 
 ## Como solucionar?
@@ -29,7 +30,7 @@ Além de ser necessário sincronizar os cores, era necessário sincronizar as m�
 
 ![](https://pt.wikipedia.org/wiki/Ficheiro:Erlang_logo.png)
 
-A Erlang utilizava sua máquina virtual para gerenciar os processos, aos invés das threads do processador, não compartilhava memória, se comunicava através de mensagens assincronas e utilizava a ideia de supervisores que monitoravam os processos e reiniciava-os caso necessário. 
+A Erlang utilizava sua máquina virtual para gerenciar os processos, aos invés das *threads* do processador, não compartilhava memória, se comunicava através de mensagens assincronas e utilizava a ideia de supervisores que monitoravam os processos e reiniciava-os caso necessário. 
 Isto solucionava os problemas da concorrência, mas a linguagem aindo tinha falhas de suporte ao desenvolvedor como features, com isso José Valim começou a deenvolver sua própria linguagem de programação, a Elixir surge como uma linguagem funcional e concorrente e que utiliza a Erlang VM como máquina virtual.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Official_Elixir_logo.png" alt="Elixir Logo" width="150">
