@@ -15,6 +15,9 @@ Os principais problemas encontrados advém do fato do controle das *threads* ser
 
 ![](https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2024b/main/classes/22/img/The-conflict-and-concurrent-lanes.jpeg)
 
+
+EXEMPLO: GITHUB.
+
 ## Como solucionar?
 
 Na busca por resolver os problemas da concorrência José começou explorar a programação, seus paradigmas, ambientes de execução e encontrou as possíveis soluções em dois pontos específicos:
@@ -45,10 +48,11 @@ Isto solucionava os problemas da concorrência, mas a linguagem aindo tinha falh
 -Aumenta a eficiência, desempenho e escalabilidade de aplicações;
 
 -Existem basicamente dois modelos:
---Preemptivo: O sistema operacional decide quando alternar entre tarefas (usado em linguagens como Java, Python).
---Cooperativo: As tarefas decidem explicitamente quando ceder o controle (usado em frameworks como Node.js).
+--Preemptivo: O sistema operacional decide quando alternar entre tarefas, o que também evita a monopolização de recursos, exemplos: Java (threads geridas pela JVM, Python através do módulo *threading* e *multiprocessing* e Rust que possuem suporte nativo;
 
--Linguagens com suporte a concorrência: GO, Rust, Kotlin, Clojure, Swift, Java, Python, Haskell, etc.
+--Cooperativo: As tarefas decidem explicitamente quando ceder o controle, usa funções específicas de chamada e geralmente não usa todos os cores diretamente, exemplos: Lua através corrotinas, NodeJs.
+
+-Material da CIn da UFPE sobre programação concorrente: https://www.cin.ufpe.br/~if686/aulas/13_Threads_PC.pdf.
 
 ### BIBLIOGRAFIA
 - Artigo sobre programação concorrente, disponível em:
